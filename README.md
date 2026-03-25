@@ -1,5 +1,12 @@
 # E-Commerce OLIST Analytics and ML Dashboard
 
+## Live Dashboard Link:
+https://app.powerbi.com/view?r=eyJrIjoiZjljZGJmZWQtMTRmMC00OWJiLWE4ZjgtZTQzZTVkZWU3OWUwIiwidCI6ImU1NDhjMjU2LTRkODMtNDRiMi1iZWM2LTcwZDhhOTFhYzIxZSJ9&pageName=76a7434066ccc0018243
+
+## kaggle Datset:
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+Built on the Olist Brazilian E-Commerce public dataset from Kaggle — 100K+ orders, 9 tables, real-world complexity.
+
 This project is an end-to-end analytics solution built on the Brazilian OLIST e-commerce dataset.
 
 It combines:
@@ -28,12 +35,15 @@ The goal of the project is to turn raw e-commerce data into a business-ready ana
    1. reusable Python pipeline code
 3. `dashboards/`
    1. Power BI assets, themes, backgrounds, and semantic model files
-4. `reports/`
+4. `docs/`
    1. exported metrics, predictions, quality reports, and project documentation
-5. `PROJECT_CONTEXT.md`
-   1. summary of project state and key implementation details
-6. `SESSION_CHANGELOG.md`
-   1. working notes and session updates
+
+## What I built:
+1. 4-page interactive dashboard (Executive, Operations, Products, ML Intel)
+2. 5 ML tracks: Classification, Regression, Clustering, Anomaly Detection, Time Series
+3. Full data pipeline from raw CSV to Power BI semantic model
+4. Automated BI exports with model performance tracking
+
 
 ## Main Workflow
 
@@ -43,34 +53,7 @@ Recommended order:
 2. run `notebooks/02_eda.ipynb`
 3. run `notebooks/03_feature_engineering.ipynb`
 4. run `notebooks/04_ml_pycaret_suite.ipynb`
-5. use outputs in `reports/` and `dashboards/`
 
 ## Tech Stack
 
-Python | Pandas | PyCaret | Scikit-learn | Power BI | DAX | SVG | Jupyter
-
-## Notes
-
-1. raw data, large artifacts, environments, and local models are intentionally not meant for GitHub upload
-2. use the `github_upload_bundle/` folder if you want a cleaner upload-ready version of the repo
-
-## Recommended GitHub Upload
-
-If uploading to GitHub, include:
-
-1. `notebooks/`
-2. `pipelines/`
-3. `dashboards/`
-4. `reports/`
-5. `PROJECT_CONTEXT.md`
-6. `SESSION_CHANGELOG.md`
-7. `requirements.txt`
-8. `README.md`
-9. `.gitignore`
-
-Exclude:
-
-1. `.venv/`
-2. `data/`
-3. `models/`
-4. temp and log files
+Python | Pandas | PyCaret | Scikit-learn | Power BI | DAX | Jupyter
